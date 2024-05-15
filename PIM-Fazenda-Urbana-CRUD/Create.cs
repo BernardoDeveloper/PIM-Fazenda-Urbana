@@ -45,10 +45,10 @@ namespace PIM_Fazenda_Urbana_CRUD
             Console.Write("\nOpção: ");
 
             int numberScreen = int.Parse(Console.ReadLine() ?? "0");
-            if (numberScreen < 0 || numberScreen > 4)
+            if (numberScreen != 0)
             {
                 var errorMessage = new ErrorHandler();
-                errorMessage.ErrorHandlerMessage("Select a valid option");
+                errorMessage.ErrorHandlerMessage("Selcione uma opção válida");
             }
             else
             {
